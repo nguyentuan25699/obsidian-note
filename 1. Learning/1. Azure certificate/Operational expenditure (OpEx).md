@@ -1,0 +1,6 @@
+OpEx is spending money on services or products over time. Renting a convention center, leasing a company vehicle, or signing up for cloud services are all examples of OpEx.
+	OpEx là chi tiêu tiền cho các dịch vụ hoặc sản phẩm theo thời gian. Thuê trung tâm hội nghị, thuê xe công ty hoặc đăng ký dịch vụ đám mây đều là những ví dụ về OpEx.
+
+Cloud computing falls under OpEx because cloud computing operates on a consumption-based model. With cloud computing, you don’t pay for the physical infrastructure, the electricity, the security, or anything else associated with maintaining a datacenter. Instead, you pay for the IT resources you use. If you don’t use any IT resources this month, you don’t pay for any IT resources.
+	Điện toán đám mây thuộc OpEx vì điện toán đám mây hoạt động theo mô hình dựa trên tiêu thụ. Với điện toán đám mây, bạn không phải trả tiền cho cơ sở hạ tầng vật lý, điện năng, bảo mật hoặc bất cứ thứ gì khác liên quan đến việc duy trì trung tâm dữ liệu. Thay vào đó, bạn trả tiền cho các tài nguyên CNTT mà bạn sử dụng. Nếu bạn không sử dụng bất kỳ tài nguyên CNTT nào trong tháng này, bạn sẽ không phải trả tiền cho bất kỳ tài nguyên CNTT nào.
+	

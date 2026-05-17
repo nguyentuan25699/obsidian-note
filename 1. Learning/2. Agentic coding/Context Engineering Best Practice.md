@@ -1,0 +1,26 @@
+## Nguyên tắt cốt lõi: "Ít mà chất"
+- Tối đa hoá thông tin, tối thiểu hoá nhiễu: cốt lỗi của Context engineering là tìm "tập hợp tối thiểu" các token hữu ích nhất để đạp được mục tiêu thay vì nhồi nhét thông tin.
+- Mỗi token đưa vào phải có lý do. Nếu một phần thông tin không tạo thêm giá trị, hãy loại bỏ để
+- Xem context như tài nguyên quý giá: Hãy coi mỗi token như một "nét vẽ" quý giá trên một khung giấy bị giới hạn. Người kỹ sư làm Context cần tiết chế và tinh lọc, chỉ giữ lại những nét vẽ cần thiết tạo nên bức tranh tổng thể. => Các tiếp cận này giúp mô hình tập trung tối đa vào điểm mấu chốt, tránh bị xao nhãng bởi chi tiết thừa.
+- Minimal nhưng không sơ sài: "Tối thiểu" không đồng nghĩa với ngắn gội một cách thiếu thông tin. Ngược lại luôn cần phải đảm bảo cung cấp đủ Context cần thiết để mô hình hiểu nhận vụ. Đôi lúc, nếu không chắc chắn, thì cần phải chấp nhận "thừa còn hơn thiếu".
+- Có thể tiếp cận theo 2 hướng: Một là khởi đầu với lượng thông tin nhỏ nhất có thể mà vẫn giải quyết được vấn đề, thử nhiệm với mô hình hiện có, rồi bổ sung đần các chi tiết rõ ràng hoặc ví dụ nếu phát hiện thiếu sót. Mục tiêu cuối cùng là một ngữ cảnh côn đọng, đủ ý. Hoặc ngược lại, khởi đầu với việc đưa thật nhiều Context, và dần dần lược bỏ bứt chúng xem kết quả có tệ đi không.
+-  Thiết kế bộ công cụ tối ưu: Mỗi công cụ mà agent có thể dùng cũng là một phần của context (thường định nghĩa ở đầu context). Công cụ nên được thiết kế nhỏ, gọn, làm đúng mọt việc - tránh viết những tool "đa năng mơ hồ" hoặc trùng lặp chức năng.
+- Một tập công cụ tinh gọn, sẽ giúp agent dễ lựa chọn đúng hành động hơn, giảm nguy cơ model bị lẫn lộn giữa nhiều công cụ na ná nhau.
+- Nạp tri thức cần thiết: Trước khi giao nhiệm vụ, hãy cung cấp cho mô hình các kiến thức đặc thù liên quan (như mo tả API, thông tin domain, dữ liệu cấu hình...)
+- Context không chỉ gồm nội dung cuộc hội thoại, mà còn có thể chứa những tri thức nền để mô hình ra quyết định chuẩn xác hơn. VD: nếu agent đang cần xử lý một bài toán liên quan đến lĩnh vực tài chính, ngân hàng, thì chúng ta có thể cấp cho nó một bải chú giải thuật ngữ tài chính quan trọng. như vậy mô hình sẽ "biết" bối cảnh công việc thay vì đoán mò từ dẽ liệu huấn luyện.
+
+## Sự linh hoạt Bộ nhớ ngắn hạn và dài hạn
+- Bộ nhớ ngắn hạn (trong context): Là những gì mô hình nhớ trong phiên làm việc hiện tại - ví dụ lịch sử hội thoại gần nhất, các bước lập luận vừa thực hiện, kết quả tool mới nhận. Kỹ sư cần quyết định giữ lại nhưng phần lịch sử nào trong Context để mô hình duy trì mạch suy luận nhất quán. Thông thường, các thông tin về mục tiêu, quyết định quan trong, kết quả bất thường nên được giữ, còn những đoạn lặp lại hoặc du thừa (VD: log tool dài, nội dung đã tóm tắt) có thể loại bớt.
+- Bộ nhớ dài hạn (ngoài context): Đối với tác vụ keo dài hoặc lạp lại qua nhiều phiên, Agent cần một dạng trí nhớ bền vững hơn context tạm thời. Giải phấp là cho mô hình ghi chú ra bên ngoài (VD: file NOTES.md, STATUS.md, cơ sở dữ liệu, hoặc dùng công cụ "bộ nhớ" đặc biệt). Những ghi chú này chứa thông tin quan trọng (mục tiêu, tiến độ, chi tiết cần nhớ) và có thể được nạp lại vào context khi cần. Các tiếp cận này giúp Agent nhớ được các sự kiện từ lâu ma không phải gánh tất cả trong một Context window hạn hẹp.
+- Tóm tắt (Compaction) thông minh: Khi cuộc hội thoại hoặc hành động sắp chạm trần giới hạn token, kỹ thuật tóm tắt ngữ cảnh cũ sẽ phát huy tác dụng. Ý tưởng là dùng chính mô hình tóm tắt lại nội dung đã qua (nhất là các chi tiết ít quan trọng, dữ liệu thô từ công cụ) thành một đoạn ngắn hơn, rồi mở phiên bản mới tiếp tục với bản tóc tắt + những thông tin gần nhất.
+- Tóm tắt tốt sẽ giữ được quyết định chính, mục tiêu, vấn đề còn dang dở, đồng thời bỏ đi những phần râu ria.
+=> Điều chỉnh prompt tóm tắt cẩn thận, ưu tiên giữ đủ thông tin rồi tinh chỉnh cho gọn dần.
+
+## Duy trì mục tiêu & thích ứng từ sai lầm
+-  Nhắc mục tiêu để tránh lạc hướng: ở những chuỗi tương tác dài, LLM dễ quên đi mục tiêu ban đầu mà sa vào chi tiết phụ. Kỹ thuật Recitation (Tự nhắc lại) giải quyết vấn đề này: agent định kỳ tóm tắt mục tiêu hiện tại vào cuối ngữ cảng (như cập nhật checklist, TODO). Nhờ đó ở lượt suy luận kế tiếp, mô hình luôn thấy mục tiêu ngay trong vùng chú ý nhất.
+- Giữ cả lỗi lầm trong ngữ càng: Khi agent mắc lỗi, phản xạn thường thấy là che giấu hoặc xoá bỏ dấu vết lỗi. Tuy nhiên việc đó vô tình sẽ xoá luôn manh môi để mô hình học. Thay vào đó, hãy để những bước sai và lỗi xuất hiện trong ngữ càng - mô hình sẽ tự điều chỉnh xác sất để tránh gặp lỗi đó.
+- Việc hiển thị lỗi trước đó giúp agent thích nghi và cả thiện.
+
+## Thường xuyên review lại flow, logic triển khai context engineering.
+- Các mô hình AI không ngừng phát triển, và trở nên mạnh mẽ hơn. Có thể hiện tại cần phải đưa nhiều chỉ dẫn, kiến thức, ví dụ, nhưng sau này có một mô hình mới ra đời nó sẽ mạnh mẽ hơn, làm việc tốt mà không cần nhiều chỉ dẫn như vậy.
+	- Một flow Context Engineering có thể hoạt động tốt ở thời điểm hiện tại, không có nghĩa là nó sẽ mãi phù hợp, và vẫn là phương pháp tối ưu trong tương lai.
