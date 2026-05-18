@@ -1,0 +1,229 @@
+{
+  "main": {
+    "id": "b32fa2a548c8af78",
+    "type": "split",
+    "children": [
+      {
+        "id": "2003b598437e130b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e03505a090ee569f",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "76760e36a6ab40f0",
+    "type": "split",
+    "children": [
+      {
+        "id": "7c9e6ed557888b3e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b9d4112076cad9e2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8c1cb9d028a20305",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "7cf482195c6b6a46",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f85551d126b5dfff",
+    "type": "split",
+    "children": [
+      {
+        "id": "a6590f96f16c41c2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f4df0f5dc5e724ef",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "ebbddf9cadc2d6cc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "b2e7b90da78b0fed",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "9e94fbc1a894a5ce",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "1b1747e7680ec1c1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "b9d4112076cad9e2",
+  "lastOpenFiles": [
+    "public/index-og-image.webp",
+    "public/1.-Learning/4.-Finace/tự-do-tài-chính-og-image.webp",
+    "public/1.-Learning/4.-Finace/Tình-trạng-tài-chính-og-image.webp",
+    "public/1.-Learning/4.-Finace/Quản-lý-tài-chính-cá-nhân-và-quản-lý-tài-sản-đầu-tư-og-image.webp",
+    "public/1.-Learning/3.-Code/useTransition-og-image.webp",
+    "public/1.-Learning/3.-Code/sessionStorage-og-image.webp",
+    "public/1.-Learning/3.-Code/rem-og-image.webp",
+    "public/1.-Learning/3.-Code/localStorage-og-image.webp",
+    "public/1.-Learning/3.-Code/jQuery-og-image.webp",
+    "public/1.-Learning/3.-Code/flex-vs-grid-og-image.webp",
+    "public/1.-Learning/3.-Code/em-og-image.webp",
+    "public/index.html",
+    "public/1.-Learning/1.-Azure-certificate/Troubleshoot-solutions-by-using-Application-Insights.html",
+    "public/1.-Learning/1.-Azure-certificate/Tip.html",
+    "public/1.-Learning/1.-Azure-certificate/Software-as-a-service-(SaaS).html",
+    "public/1.-Learning/1.-Azure-certificate/Shared-Responsibility-Model.html",
+    "public/1.-Learning/1.-Azure-certificate/Platform-as-a-service-(PaaS).html",
+    "public/1.-Learning/1.-Azure-certificate/Operational-expenditure-(OpEx).html",
+    "public/1.-Learning/1.-Azure-certificate/Microsoft-identity-platform.html",
+    "public/1.-Learning/1.-Azure-certificate/Manage-application-secrets-with-Azure-Key-Vault.html",
+    "public/1.-Learning/1.-Azure-certificate/Infrastructure-as-a-service-(IaaS).html",
+    "content/1. Learning/4. Finace/tự do tài chính.md",
+    "content/1. Learning/4. Finace/Tình trạng tài chính.md",
+    "content/1. Learning/4. Finace/Quản lý tài chính cá nhân và quản lý tài sản đầu tư.md",
+    "content/1. Learning/3. Code/useTransition.md",
+    "content/1. Learning/3. Code/sessionStorage.md",
+    "content/1. Learning/3. Code/rem.md",
+    "content/1. Learning/3. Code/localStorage.md",
+    "content/1. Learning/3. Code/jQuery.md",
+    "content/1. Learning/3. Code/flex vs grid.md",
+    "content/1. Learning/3. Code/em.md",
+    "content/1. Learning/3. Code/cookies.md",
+    "content/1. Learning/3. Code/Xử lý bất đồng bộ trong JS.md",
+    "content/1. Learning/3. Code/Truthy, Falsy.md",
+    "content/1. Learning/3. Code/Specificity.md",
+    "content/1. Learning/3. Code/Set.md",
+    "content/1. Learning/3. Code/Redux.md",
+    "content/1. Learning/3. Code/React server component.md",
+    "content/1. Learning/3. Code/React Context.md",
+    "content/1. Learning/3. Code/Map.md",
+    "content/1. Learning/3. Code/JavaScript.md",
+    "content/1. Learning/3. Code/Hoisting.md",
+    "content/1. Learning/3. Code/HTML5.md",
+    "content/1. Learning/3. Code/FE Interview.md",
+    "content/1. Learning/3. Code/ES6+.md",
+    "content/1. Learning/3. Code/Closure.md"
+  ]
+}

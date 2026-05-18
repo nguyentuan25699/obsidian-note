@@ -63,12 +63,13 @@ Làm sao tránh specificity quá cao?
 - [[Box model]]
 - [[Specificity]]
 - [[flex vs grid]]
-- position vs z-index
+- [[position]] vs [[z-index]]
 - responsive
 - CSS variable vs SCSS variablel
-- mixin
-- nesting
+- [[mixin]]
+- [[nesting]]
 - CSS Modules/Tailwind trade-offf
+- [[Sass/SCSS]]
 
 ## 11. Thuật toán điều hòa của React hoạt động như thế nào, và React Fiber tối ưu hóa những gì?
 - React reconciliation là quá trình React so sánh cây UI mới với cây UI cũ để quyết định phần nào cần update thật trên DOM.
@@ -417,7 +418,7 @@ Page/Route Handler mới chạy
 Middleware trong Next.js là logic chạy trước khi request được xử lý bởi page hoặc route. Nó thường dùng cho auth guard, redirect, rewrite, i18n, A/B testing, hoặc xử lý header/cookie.
 ```
 
-## 32. Github
+## 32. Github action
 
 
 
