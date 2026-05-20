@@ -1,3 +1,10 @@
+---
+date: 2026-05-20
+tags:
+  - js
+  - code
+draft: false
+---
 ## **1. Array trong JavaScript thực chất là gì?**
 - Ở mức cơ bản, array là danh sách có thứ tự, ex: 
 ```js

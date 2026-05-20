@@ -69,7 +69,7 @@ Làm sao tránh specificity quá cao?
 - [[mixin]]
 - [[nesting]]
 - CSS Modules/Tailwind trade-offf
-- [[Sass/SCSS]]
+- [[Sass - SCSS]]
 
 ## 11. Thuật toán điều hòa của React hoạt động như thế nào, và React Fiber tối ưu hóa những gì?
 - React reconciliation là quá trình React so sánh cây UI mới với cây UI cũ để quyết định phần nào cần update thật trên DOM.
