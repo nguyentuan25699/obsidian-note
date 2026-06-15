@@ -1,3 +1,4 @@
+note
 ## **JavaScript là gì?**
 JavaScript là ngôn ngữ lập trình chạy chủ yếu trên browser để tạo tương tác cho web.
 
