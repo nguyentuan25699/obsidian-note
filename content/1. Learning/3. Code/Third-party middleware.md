@@ -11,4 +11,3 @@ const cookieParser = require('cookie-parser')
 // load the cookie-parsing middleware
 app.use(cookieParser())
 ```
-

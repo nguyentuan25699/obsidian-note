@@ -147,8 +147,8 @@ Ta sẽ tìm hiểu cách Express sử dụng middleware:
 
 Hình trên mô tả khi một request gửi đến Express sẽ được xử lý qua 5 bước như sau :
 - Tìm định tuyến tương ứng với request
-- Dùng CORS Middleware để kiểm tra cross-origin Resource sharing của request
-- Dùng CRSF Middleware để xác thực CSRF của request, chống fake request
+- Dùng [[CORS]] Middleware để kiểm tra cross-origin Resource sharing của request
+- Dùng [[CSRF]] Middleware để xác thực CSRF của request, chống fake request
 - Dùng Auth Middleware để xác thực request có được truy cập hay không
 - Xử lý công việc được yêu cầu bởi request (Main Task)
 
@@ -173,5 +173,5 @@ Trong Express, có 5 kiểu middleware có thể sử dụng :
 - [[Router-level middleware]] (middlware cấp điều hướng - router)
 - [[Error-handling middleware]] (middleware xử lý lỗi)
 - [[Built-in middleware]] (middleware sẵn có)
-- Third-party middleware (middleware của bên thứ ba)
+- [[Third-party middleware]] (middleware của bên thứ ba)
 

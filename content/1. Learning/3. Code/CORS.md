@@ -33,3 +33,65 @@ Các request có thay đổi dữ liệu như `POST`, `PUT`, `PATCH`, `DELET
 ![[Pasted image 20260615223000.png]]
 
 ![[Pasted image 20260615223008.png]]
+
+
+## CORS trong framework
+### Laravel
+
+Trước hết cần tạo middleware, chạy command:
+
+```bash
+$ php artisan make:middleware Cors
+```
+
+Sau đó thêm header trong `app/Http/Middleware/Cors.php`:
+
+```php
+<?php
+namespace App\Http\Middleware;
+
+use Closure;
+
+class Cors
+{
+  public function handle($request, Closure $next)
+  {
+    return $next($request)
+      ->header("Access-Control-Allow-Origin", "*")
+      ->header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
+      ->header("Access-Control-Allow-Headers", "X-Requested-With, Content-Type, X-Token-Auth, Authorization");
+  }
+}
+```
+
+Đăng ký middleware trong `app/Http/kernel.php`:
+
+```php
+protected $routeMiddleware = [
+  "auth" => \App\Http\Middleware\Authenticate::class,
+  "auth.basic" => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
+  "guest" => \App\Http\Middleware\RedirectIfAuthenticated::class,
+  "cors" => \App\Http\Middleware\Cors::class,
+];
+```
+
+Với route nào cần CORS, các bạn chỉ việc thêm middleware này vào, hoặc bạn cũng có thể tham khảo package [laravel-cors](https://github.com/fruitcake/laravel-cors)
+
+### Nodejs
+
+Set header trên response để bật CORS:
+
+```js
+res.header("Access-Control-Allow-Origin", "*");
+```
+
+Bật CORS cho toàn bộ tài nguyên trên server:
+
+```js
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+```
+
