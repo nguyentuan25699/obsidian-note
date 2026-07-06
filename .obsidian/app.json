@@ -2,10 +2,16 @@
   "alwaysUpdateLinks": true,
   "showLineNumber": false,
   "newFileLocation": "current",
-  "attachmentFolderPath": "quartz/attachments",
+  "attachmentFolderPath": "attachments",
   "userIgnoreFilters": [
     "quartz/node_modules/",
     "quartz/docs/",
-    "quartz/quartz/"
+    "quartz/quartz/",
+    "node_modules/",
+    "docs/",
+    "templates/",
+    "CODE_OF_CONDUCT",
+    "README",
+    "quartz/"
   ]
 }
