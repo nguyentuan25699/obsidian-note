@@ -11,10 +11,14 @@
             "id": "d420f8209cf8434d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "content/2. Finace/Giai đoạn tài chính.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Giai đoạn tài chính"
             }
           }
         ]
@@ -178,13 +182,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d420f8209cf8434d",
+  "active": "b9d4112076cad9e2",
   "lastOpenFiles": [
-    "content/1. Learning/4. Finance/tự do tài chính.md",
-    "content/1. Learning/4. Finance/Tình trạng tài chính.md",
-    "content/1. Learning/4. Finance/Quản lý tài chính cá nhân và quản lý tài sản đầu tư.md",
-    "content/1. Learning/4. Finance/Nguyên tắc 4%.md",
-    "content/1. Learning/4. Finance/Giai đoạn tài chính.md",
+    "content/2. Finace",
+    "content/2. Finace/tự do tài chính.md",
+    "content/2. Finace/Tình trạng tài chính.md",
+    "content/2. Finace/Quản lý tài chính cá nhân và quản lý tài sản đầu tư.md",
+    "content/2. Finace/Nguyên tắc 4%.md",
+    "content/2. Finace/Giai đoạn tài chính.md",
     "content/1. Learning/4. Finance",
     "content/1. Learning/0. English/Present Simple.md",
     "content/1. Learning/0. English/Present Continuous.md",
@@ -208,7 +213,6 @@
     "content/1. Learning/3. Code/sessionStorage.md",
     "content/1. Learning/3. Code/position.md",
     "content/1. Learning/3. Code/npm.md",
-    "content/1. Learning/3. Code/nodemon.md",
     "content/1. Learning/3. Code",
     "content/1. Learning/1. Azure certificate",
     "content/1. Learning",
