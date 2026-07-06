@@ -8,7 +8,7 @@ Các tính năng nổi bật của Express:
 - Cho phép định nghĩa middleware giúp tổ chức và tái sử dụng code
 - Hỗ trợ RESTful API
 
-Cài đặt:
+Cài đặt: với [[npm]]
 ```bash
 npm install express
 ```
