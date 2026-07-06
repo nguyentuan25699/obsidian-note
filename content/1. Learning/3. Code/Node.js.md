@@ -31,36 +31,39 @@ Từ ấy trong tôi bừng nắng hạ
 > undefined
 ```
 
-## 2. Event loop
+## 2. [[npm]]
+- Node package manager
+
+## 3. Event loop
 The [[Event loop]] is what allows Node.js perform non-blocking I/O operations, despite the fact the javascript is single-threaded - by offloading operations to the system kernel whenever possible.
 
-## 3. Callbacks
+## 4. Callbacks
 - A [[Callback in Node.js]] is a function which is called when a task is completed, thus helps in preventing any kind of blocking and a callback function allows other code to run in the meantime
 - Using [[Callback]] concept, Node.js can process a large number of requests without waiting for any function to return the result which makes Node.js highly scalable
 
-## 4. Event emitter
+## 5. Event emitter
 - Introduction the [[Event emitter]]
 - EventEmitter class
 - Methods & Events
 
-## 5. Modules
+## 6. Modules
 - [[Modules]] introduction
 - Node.js module Types
 - Export Module in Node.js
 
-## 6. [[Web module]]
+## 7. [[Web module]]
 - Introduction HTTP Module
 - Working with HTTP Module
 - Introduction URL Module
 - Working with URL Module
 
-## 7. [[Buffers]]
+## 8. [[Buffers]]
 - What is binary code?
 - Introduction to Buffers
 - Buffers in Node.js
 - Working with Buffers Node.js
 
-## 8. [[Streams]]
+## 9. [[Streams]]
 - What are Streams? 
 - Why use Streams? 
 - Streams in Node.js 

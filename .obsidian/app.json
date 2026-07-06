@@ -1,1 +1,11 @@
-{}
+{
+  "alwaysUpdateLinks": true,
+  "showLineNumber": false,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "quartz/attachments",
+  "userIgnoreFilters": [
+    "quartz/node_modules/",
+    "quartz/docs/",
+    "quartz/quartz/"
+  ]
+}
