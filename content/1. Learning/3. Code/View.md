@@ -48,3 +48,99 @@ mysql> SELECT * FROM CheapCars;
 +------------+
 ```
 
+
+What happens to a view if we delete a table, from which the data is selected?
+```sql
+mysql> DROP TABLE Cars;
+mysql> SELECT * FROM CheapCars;
+
+ERROR 1356 (HY000): View 'mydb.CheapCars' references invalid table(s) or column(s) or function(s) or definer/invoker of view lack rights to use them
+```
+
+Querying the view we receive the above error.
+```sql
+mysql> SOURCE cars.sql
+mysql> SELECT * FROM CheapCars;
++------------+
+| Name       |
++------------+
+| Skoda      |
+| Citroen    |
+| Volkswagen |
++------------+
+```
+When we recreate the table the view works again.
+Finally, a view is deleted with the DROP VIEW syntax.
+___
+
+## 3. Finding View
+- We will mention several ways how to find views in MySQL database.
+```sql
+mysql> SHOW FULL TABLES;
++----------------+------------+
+| Tables_in_mydb | Table_type |
++----------------+------------+
+| AA             | BASE TABLE |
+...
+| Chars          | BASE TABLE |
+| CheapCars      | VIEW       |
+| Customers      | BASE TABLE |
+| Dates          | BASE TABLE |
+| Decimals       | BASE TABLE |
+| FavoriteCars   | VIEW       |
+...
+```
+
+- We can list all tables in a database with a SHOW FULL TABLES statement. In the Table_type column we can see, whether it is a table or a view.
+
+```sql 
+mysql> SELECT TABLE_NAME, TABLE_TYPE FROM information_schema.TABLES;
++---------------------------------------+-------------+
+| TABLE_NAME                            | TABLE_TYPE  |
++---------------------------------------+-------------+
+| CHARACTER_SETS                        | SYSTEM VIEW |
+| COLLATIONS                            | SYSTEM VIEW |
+| COLLATION_CHARACTER_SET_APPLICABILITY | SYSTEM VIEW |
+| COLUMNS                               | SYSTEM VIEW |
+| COLUMN_PRIVILEGES                     | SYSTEM VIEW |
+| ENGINES                               | SYSTEM VIEW |
+...
+| Chars                                 | BASE TABLE  |
+| CheapCars                             | VIEW        |
+| Customers                             | BASE TABLE  |
+| Dates                                 | BASE TABLE  |
+| Decimals                              | BASE TABLE  |
+| FavoriteCars                          | VIEW        |
+...
+```
+
+- In the information_schema database there is a TABLES table. The TABLE_NAME and TABLE_TYPE columns give us information about table names and their types.
+```sql
+mysql> SELECT TABLE_NAME FROM information_schema.VIEWS;
++--------------+
+| TABLE_NAME   |
++--------------+
+| CheapCars    |
+| FavoriteCars |
++--------------+
+```
+
+- This is the most straight forward way to find views. We query the VIEWS table of the information_schema database.
+- The UNION operator is used to combine result-sets of two or more SELECT statements. Each select must have the same number of columns.
+- We create a view called FavoriteCars. In this view, we have three rows which are considered to be favorite. There are three SELECT statements combined with a UNION operator. This is a SELECT fromthe view.
+```sql
+mysql> CREATE VIEW FavoriteCars AS
+	-> SELECT * FROM Cars WHERE Id=7
+	-> UNION SELECT * FROM Cars WHERE Id=4
+	-> UNION SELECT * FROM Cars WHERE Id=5;
+
+mysql> SELECT * FROM FavoriteCars;
++----+---------+--------+
+| Id | Name    | Cost   |
++----+---------+--------+
+| 7  | Hummer  | 41400  |
+| 4  | Volvo   | 29000  |
+| 5  | Bentley | 350000 |
++----+---------+--------+
+```
+

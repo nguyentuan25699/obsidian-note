@@ -68,3 +68,37 @@ ___
 - Creating, modifying and dropping a View
 - Finding View
 - Creating a View with a Union
+___
+
+## 9. [[Function]]
+- Mathematical functions
+- Aggregate functions
+- String functions
+- Date and time functions
+- System functions
+___
+
+## 10. [[Stored]]
+- Stored routines definition
+- A simple procedure
+- A simple function
+- Procedure parameters
+- Random numbers
+- Finding routines
+___
+
+## 11. [[Index in database]]
+- Basic Concepts of Indexing
+- How it works
+- Types of Indexes
+- Advantages and Disadvantages
+- Syntax
+___
+
+## 12. [[Transactions in database]]
+- Introduction
+- ACID in database
+- Transactions
+- How transactions works?
+- Advantages and Disadvantages
+- Transaction Control
