@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "e20308a5ce678cb9",
+        "id": "3a843f739461c941",
         "type": "tabs",
         "children": [
           {
@@ -188,13 +188,13 @@
     "content/1. Learning/2. Agentic coding/Ôn tập lý thuyết và khái niệm.md",
     "content/1. Learning/2. Agentic coding/Triển khai Agentic Coding với hướng tiếp cân theo Spec-Driven Development.md",
     "content/1. Learning/2. Agentic coding/Từ Prompt Engineering đến Context Engineering.md",
+    "content/1. Learning/2. Agentic coding/0. Agentic coding.md",
     "content/1. Learning/2. Agentic coding/Agentic Coding.md",
     "content/1. Learning/2. Agentic coding/OpenAI Codex.md",
     "content/1. Learning/2. Agentic coding/MoMorph và ứng dụng MoMorph trong Spec-Driven Development.md",
-    "content/1. Learning/2. Agentic coding/0. Agentic coding.md",
     "content/1. Learning/2. Agentic coding/Github Copilot Agent Mode.md",
-    "content/1. Learning/2. Agentic coding/Claude Code.md",
     "content/1. Learning/2. Agentic coding/Context Engineering Best Practice.md",
+    "content/1. Learning/2. Agentic coding/Claude Code.md",
     "content/1. Learning/2. Agentic coding",
     "content/1. Learning/3. Code/FE Interview.md",
     "content/1. Learning/3. Code/HTML5.md",
@@ -213,6 +213,10 @@
     "content/2. Finace",
     "content/1. Learning",
     "content",
+    "attachments/Pasted image 20260707172606.png",
+    "attachments/Pasted image 20260707171148.png",
+    "attachments/Pasted image 20260707171015.png",
+    "attachments/Pasted image 20260707170052.png",
     "Untitled.canvas",
     "attachments/Pasted image 20260706161516.png",
     "attachments/Pasted image 20260706161255.png",
@@ -220,10 +224,6 @@
     "attachments/Pasted image 20260706160355.png",
     "attachments/Pasted image 20260706150641.png",
     "attachments/Pasted image 20260706150428.png",
-    "attachments/Pasted image 20260706143830.png",
-    "attachments/Pasted image 20260706105630.png",
-    "attachments/Pasted image 20260706105244.png",
-    "attachments/Pasted image 20260706103831.png",
     "quartz/attachments",
     "content/1. Learning/4. Finance",
     "node_modules/mathjax-full/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff"

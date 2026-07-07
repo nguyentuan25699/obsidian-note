@@ -44,3 +44,27 @@ ___
 - Subquery with the INSERT statement
 - Correlated subqueries
 - Subqueries with EXISTS, NOT EXISTS
+___
+
+## 6. [[SELECT statements]]
+- Retrieving data
+- Selecting specific columns
+- Renaming column names
+- Ordering data - Grouping data
+- Selecting specific rows with the WHERE clause
+- Removing duplicate items
+- Some function
+___
+
+## 7. [[Join table]]
+- What is a join?
+- Inner Joins
+- Outer Joins
+- Natural Joins
+___
+
+## 8. [[View]]
+- View definition
+- Creating, modifying and dropping a View
+- Finding View
+- Creating a View with a Union
