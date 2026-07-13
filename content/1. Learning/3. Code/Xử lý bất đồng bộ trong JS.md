@@ -40,7 +40,7 @@ Người ta thường nói JavaScript là ngôn ngữ bất đồng bộ, nhưng
 
 > Một vòng lặp vô tận trong JS luôn dẫn tới blocking, dù bạn có code bất đồng bộ kiểu nào đi chăng nữa.
 
-Code JS là đơn luồng và hoàn toàn đồng bộ. Chỉ có những tác vụ sử dụng WebAPIs (do browser) như AJAX, timeout,... thì JS mới thực thi chúng dạng bất đồng bộ. (hoặc một số API như AJAX của jquery cho phép cả hai chế độ).
+Code JS là đơn luồng và hoàn toàn đồng bộ. Chỉ có những tác vụ sử dụng WebAPIs (do browser) như [[AJAX]], timeout,... thì JS mới thực thi chúng dạng bất đồng bộ. (hoặc một số API như [[AJAX]] của [[jQuery]] cho phép cả hai chế độ).
 
 Do việc gọi và dùng các hàm WebAPIs tương tự như code bình thường, nên có thể bạn hiểu nhầm code JS cũng là bất đồng bộ.
 

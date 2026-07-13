@@ -19,7 +19,8 @@ console.log(hoist);
 
 var hoist = 500;
 ```
-Kết quả nhận được sẽ là `undefined`, Cơ chế Hoisting của Javasript đã đưa khai báo biến lên trên cùng: 
+
+Kết quả nhận được sẽ là `undefined`, Cơ chế Hoisting của Javascript đã đưa khai báo biến lên trên cùng: 
 ```
 var hoist; \\ hoist mới được khai báo nên giá trị của hoist là undefined.
 
@@ -28,7 +29,7 @@ console.log(hoist);
 var hoist = 500;
 ```
 
-- Khai báo được đưa lên trên cùng, là vị trí cao nhất trong scope hện tại (current scope).  
+- Khai báo được đưa lên trên cùng, là vị trí cao nhất trong scope hiện tại (current scope).  
 Ví dụ:
 ```
  function hoist() {
@@ -37,6 +38,7 @@ Ví dụ:
 }
 hoist(); //Output: undefined
 ```
+
 Function trên tương tự như sau:
 ```
  function hoist() {
@@ -85,4 +87,4 @@ speak(); //TypeError: speak is not a function.
 var speak = function () {
 	console.log("Hello")
 };
-```
+	```

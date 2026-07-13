@@ -5,7 +5,7 @@ Các module chính của jQuery là gì?
 
 Các module phổ biến của jQuery bao gồm:
 
-- [[Ajax]] – xử lý Ajax!
+- [[AJAX]] – xử lý Ajax!
 - Atributes – Xử lý các thuộc tính của đối tượng HTML
 - Effect – xử lý hiệu ứng
 - Event – xử lý sự kiện

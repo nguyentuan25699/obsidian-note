@@ -127,7 +127,7 @@ mysql> SELECT TABLE_NAME FROM information_schema.VIEWS;
 
 - This is the most straight forward way to find views. We query the VIEWS table of the information_schema database.
 - The UNION operator is used to combine result-sets of two or more SELECT statements. Each select must have the same number of columns.
-- We create a view called FavoriteCars. In this view, we have three rows which are considered to be favorite. There are three SELECT statements combined with a UNION operator. This is a SELECT fromthe view.
+- We create a view called FavoriteCars. In this view, we have three rows which are considered to be favorite. There are three SELECT statements combined with a UNION operator. This is a SELECT from the view.
 ```sql
 mysql> CREATE VIEW FavoriteCars AS
 	-> SELECT * FROM Cars WHERE Id=7

@@ -7,7 +7,6 @@
 - Block code: Bao gồm biến let, const được khai báo trong block code như: if else, switch case sẽ có phạm vi trong block code, trường hợp var được khai báo trong block code sẽ có phạm vi global.
 - Local: Còn được gọi phạm vi hàm, bao gồm let, const, var hoặc hàm được khai báo trong một hàm sẽ tạo ra phạm vi hàm.
 ## 3. Khái niệm Closure
-
 - Closure là một function ghi nhớ biến ở phạm vi bên ngoài của nó, kể cả khi phạm vi đó đã bị giải phóng.
 ```js
 function outer() {
@@ -102,7 +101,7 @@ Làm sao tránh specificity quá cao?
 
 ## 17. [[HTML5]]/[[CSS3]]
 
-## 18. [[Ajax]]
+## 18. [[AJAX]]
 ```text
 AJAX = kỹ thuật/gọi chung cách request bất đồng bộ không reload page.
 fetch = API native của browser để làm AJAX. (fetch là Web API có sẵn trong browser để gửi HTTP request.)

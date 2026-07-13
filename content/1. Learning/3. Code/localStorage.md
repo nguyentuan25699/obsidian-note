@@ -5,19 +5,19 @@ ___
 - Về cơ bản, nó như một table trong Excel, nhưng chỉ có hai trường là: key và value. Một số ví dụ dùng localStorage như một số user preferences: ngôn ngữ, theme, danh mục sản phẩm được chọn, giao diện tuỳ chỉnh, dashboard, layout, …
 
 Để có thể tạo ra 1 localStorage ở trên trình duyệt thì ta thực hiện như sau:
-```
+```js
 window.LocalStorage.setItem('name', 'value');
 ```
 
 Để đọc lại giá trị, bạn gọi hàm:
 
-```
+```js
 window.LocalStorage.getItem('name');
 ```
 
 Và để xóa chúng đi:
 
-```
+```js
 window.LocalStorage.clear(); //xóa tất cả
 window.LocalStorage.removeItem('name'); //chỉ xóa phần tử có tên là name
 ```
