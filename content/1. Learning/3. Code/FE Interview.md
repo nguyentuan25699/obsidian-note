@@ -64,7 +64,7 @@ Làm sao tránh specificity quá cao?
 - [[flex vs grid]]
 - [[position]] vs [[z-index]]
 - responsive
-- CSS variable vs SCSS variablel
+- CSS variable vs SCSS variable
 - [[mixin]]
 - [[nesting]]
 - CSS Modules/Tailwind trade-offf

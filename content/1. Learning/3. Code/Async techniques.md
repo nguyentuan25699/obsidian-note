@@ -87,7 +87,7 @@ function (resolve, reject) {
     // Thực hiện lệnh
     if (success)
         resolve();
-    else;
+    else
         reject();
 }
 ```
