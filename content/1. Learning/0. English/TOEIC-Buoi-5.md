@@ -18,14 +18,14 @@ Nguyên tắc chuyển từ chủ động sang bị động: tân ngữ (object)
 
 ### 1.2 Bảng công thức theo từng thì
 
-|Thì|Chủ động|Bị động|
-|---|---|---|
-|Hiện tại đơn|S + V(s/es) + O|S + am/is/are + V3|
-|Hiện tại tiếp diễn|S + am/is/are + V-ing + O|S + am/is/are + being + V3|
-|Quá khứ đơn|S + V-ed + O|S + was/were + V3|
-|Hiện tại hoàn thành|S + have/has + V3 + O|S + have/has + been + V3|
-|Tương lai đơn|S + will + V + O|S + will + be + V3|
-|Động từ khuyết thiếu|S + can/should/must + V + O|S + can/should/must + be + V3|
+| Thì                  | Chủ động                    | Bị động                       |
+| -------------------- | --------------------------- | ----------------------------- |
+| Hiện tại đơn         | S + V(s/es) + O             | S + am/is/are + V3            |
+| Hiện tại tiếp diễn   | S + am/is/are + V-ing + O   | S + am/is/are + being + V3    |
+| Quá khứ đơn          | S + V-ed + O                | S + was/were + V3             |
+| Hiện tại hoàn thành  | S + have/has + V3 + O       | S + have/has + been + V3      |
+| Tương lai đơn        | S + will + V + O            | S + will + be + V3            |
+| Động từ khuyết thiếu | S + can/should/must + V + O | S + can/should/must + be + V3 |
 
 ### 1.3 Ví dụ cụ thể từng thì (ngữ cảnh IT)
 
