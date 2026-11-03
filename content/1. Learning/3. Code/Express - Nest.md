@@ -24,7 +24,7 @@ related:
 ## Mục lục
 
 - [x] [[#Tuần 1 — Nền tảng Node.js]]
-- [ ] [[#Tuần 2 — Routing & Middleware]]
+- [x] [[#Tuần 2 — Routing & Middleware]]
 - [ ] [[#Tuần 3 — Kiến trúc & Dependency Injection]]
 - [ ] [[#Tuần 4 — Database quan hệ (SQL)]]
 - [ ] [[#Tuần 5 — Database phi quan hệ (NoSQL)]]
@@ -47,24 +47,27 @@ related:
 
 Tách thành 5 buổi, mỗi buổi 1 ý, tránh dồn routing + middleware + Nest vào 1 lần.
 
-- [ ] Buổi 1 — Express routing cơ bản (`app.get/post/...`, route params, query string)
-- [ ] Buổi 2 — Express middleware (`app.use`, custom middleware, thứ tự chạy, `next()`)
-- [ ] Buổi 3 — Express `Router` — tách route ra file riêng, hoàn thiện CRUD `products`
-- [ ] Buổi 4 — Nest Controllers & decorator (`@Controller`, `@Get/@Post`, `@Param/@Body`)
-- [ ] Buổi 5 — DTO cơ bản + so sánh Middleware vs Guards/Interceptors/Pipes + tổng kết tuần
+- [x] Buổi 1 — Express routing cơ bản (`app.get/post/...`, route params, query string)
+- [x] Buổi 2 — Express middleware (`app.use`, custom middleware, thứ tự chạy, `next()`)
+- [x] Buổi 3 — Express `Router` — tách route ra file riêng, hoàn thiện CRUD `products`
+- [x] Buổi 4 — Nest Controllers & decorator (`@Controller`, `@Get/@Post`, `@Param/@Body`)
+- [x] Buổi 5 — DTO cơ bản + so sánh Middleware vs Guards/Interceptors/Pipes + tổng kết tuần
 
 | Buổi | Nội dung | Note |
 |---|---|---|
-| 1-3 | Xem chi tiết từng buổi ở trên | [[Tuần 2 - Express (Routing & Middleware)]] |
-| 4-5 | Xem chi tiết từng buổi ở trên | [[Tuần 2 - Nest (Routing & Middleware)]] |
-| 5 | So sánh Middleware vs Guards/Interceptors/Pipes | [[Tuần 2 - So sánh Express vs Nest]] |
+| 1 | Express routing cơ bản | [[Tuần 2 - Express (Routing & Middleware)]] |
+| 2 | Express middleware | [[Tuần 2 - Express (Routing & Middleware)]] |
+| 3 | Express `Router` & hoàn thiện CRUD | [[Tuần 2 - Express (Routing & Middleware)]] |
+| 4 | Nest Controllers & decorator | [[Tuần 2 - Nest (Routing & Middleware)]] |
+| 5 | DTO cơ bản | [[Tuần 2 - Nest (Routing & Middleware)]] |
+| 5 | Tổng kết: so sánh Express vs Nest cả tuần | [[Tuần 2 - So sánh Express vs Nest]] |
 
 ## Tuần 3 — Kiến trúc & Dependency Injection
 
 | Nội dung | Note |
 |---|---|
-| Nest: Modules, Providers, Services, DI | [[Tuần 3 - Nest (Kiến trúc & DI)]] |
 | Express: tự tổ chức service/controller layer tương đương | [[Tuần 3 - Express (Kiến trúc & DI)]] |
+| Nest: Modules, Providers, Services, DI | [[Tuần 3 - Nest (Kiến trúc & DI)]] |
 | So sánh độ linh hoạt vs độ chặt chẽ | [[Tuần 3 - So sánh Express vs Nest]] |
 | Dự án: refactor code Tuần 2 theo layer controller/service/repository | [[Tuần 3 - Express (Kiến trúc & DI)]] · [[Tuần 3 - Nest (Kiến trúc & DI)]] |
 

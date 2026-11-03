@@ -1,4 +1,3 @@
-
 > [!info] Về file này
 > Gộp kiến thức + bài tập phía **Express** cho chủ đề Routing & Middleware, cập nhật thêm sau mỗi buổi (1 → 3). Phần Nest tương ứng: [[Tuần 2 - Nest (Routing & Middleware)]] *(sẽ xuất hiện ở buổi 4)*. Bảng so sánh 2 bên: [[Tuần 2 - So sánh Express vs Nest]] *(sẽ xuất hiện ở buổi 5)*.
 
@@ -72,9 +71,32 @@ Qua 2 vòng review, sửa 3 lỗi thật:
 > Nghi ngờ double-cast qua `unknown` là thừa (vì `req.body` mặc định type `any`, từ `any` luôn assert trực tiếp được) — verify bằng cách đọc thẳng definition file trong `node_modules/@types/express-serve-static-core`: `ReqBody = any` đúng như dự đoán, và compile thử `req.body as {...}` (không qua `unknown`) không hề báo lỗi. Không tìm được lỗi gốc để tái hiện — có thể tới từ ngữ cảnh code khác lúc đó. Kết luận: `as {...}` (assertion đơn) là đủ, không cần đường vòng qua `unknown`.
 
 ## Buổi 3 — Router & hoàn thiện CRUD
-🔜 Chưa học.
+
+### Khái niệm
+
+`index.ts` gộp chung khởi tạo app, middleware, data, route sẽ phình to khi thêm resource mới. `express.Router()` cho phép định nghĩa 1 nhóm route trong file riêng rồi mount vào app chính:
+
+```js
+// src/routes/products.route.ts
+const router = require('express').Router()
+router.get('/', ...)      // ứng với GET /products
+router.get('/:id', ...)   // ứng với GET /products/:id
+module.exports = router
+```
+
+```js
+// src/index.ts
+app.use('/products', require('./routes/products.route'))
+```
+
+Path bên trong router **không lặp lại** tiền tố `/products` — tiền tố đó khai báo đúng 1 lần lúc mount (`app.use('/products', ...)`). Router hoạt động như 1 "mini app" độc lập.
+
+### Bài tập
+Tách 3 route (`GET /`, `GET /:id`, `POST /`) từ `index.ts` sang `src/routes/products.route.ts`, mount lại bằng `app.use('/products', productsRouter)`.
+
+Chỉ 1 lỗi cần sửa: đặt tên file `product.route.ts` (số ít) — lệch với chính route `/products` (số nhiều) định nghĩa bên trong, không đồng bộ với resource đang có. Đổi thành `products.route.ts`. Sau khi sửa, `tsc --noEmit` sạch + regression test đủ 5 case cũ (list, filter, by id, 404, POST) đều đúng — refactor không làm hỏng gì.
 
 ## Liên quan
-- [[00 - Lộ trình Backend (Master Plan)]]
+- [[Express - Nest]]
 - [[Tuần 2 - Nest (Routing & Middleware)]]
 - [[Tuần 1 - Node.js Fundamentals]]
